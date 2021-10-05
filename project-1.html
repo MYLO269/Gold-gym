@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+           h1{
+               background-color: deeppink;
+               color:wheat;
+               text-align: center;
+           }
+        
+           input[type=submit]{
+               background-color: royalblue;
+               cursor: pointer;
+               border:none;
+               color:wheat;
+               text-align: center;
+               padding: 12px 20px;
+               width: 100%;
+
+
+           }
+           fieldset{
+               background-color: whitesmoke;
+               border:3px #ccc;
+           }
+
+           textarea{
+               width: 100%;
+               padding: 12px;
+               border:1px royalblue;
+               border-radius: 5px;
+               background-color:azure;
+               margin: 10px;
+           }
+
+           *{
+               box-sizing: border-box;
+           }
+
+           body{
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               margin: 15px 30px;
+               font-size: 17px;
+               padding: 8px;
+           }
+
+           .container{
+               background-color: #f2f2f2;
+               padding: 5px 20px 15px 20px;
+               border: 1px solid light gray;
+               border-radius: 4px;
+           }
+
+           input[type="text"],
+           input[type="email"],
+           input[type="number"],
+           input[type="password"],
+           input[type="date"],
+           input[type="tel"],
+           select,
+           textarea{
+               width:100%;
+               padding: 12px;
+               border:1px solid #ccc;
+               border-radius: 5px;
+               margin: 10px;
+
+           }
+
+           
+           form{
+               background-color:lavender;
+               padding: 50px;
+               border: 2px;
+               border-radius: 5px;
+
+           }
+    </style>
+</head>
+<body>
+    <form>
+    
+    <marquee><h1 >PAYMENT FORM</h1></marquee>
+    <hr>
+    <h2>User Information</h2>
+    <br>
+    <p>&nbsp;&nbsp;Name:<input type="text" name="name" placeholder="Enter Name"></p>
+    <fieldset>
+        <legend>GENDER</legend>
+         <p>Male<input type="radio" name="gender" id="male" value="Male"></p>
+         <p>Female<input type="radio" name="gender" id="female" value="Female"></p>
+    </fieldset>
+    <p>&nbsp;&nbsp;Address:<textarea name="address" id="address" placeholder="Enter Your address" cols="100" rows="8"></textarea></p>
+    <p>&nbsp;&nbsp;Email_ID:<input type="text" name="email" placeholder="Enter email_id"></p>
+    <p>&nbsp;&nbsp;Pincode:<input type="tel" name="Pincode" placeholder="123456"></p>
+    <hr>
+    <br>
+    <fieldset>
+        <legend><h2>Payment Details</h2></legend>
+        <p>&nbsp;&nbsp;Card type:          
+        <select name="card_type" id="card_type">
+                        <option value="">--Select a Card_type</option>
+                    <option value="rupay">RuPay</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">visa</option>
+                    </select>
+                </p> 
+                    
+                
+        <p>&nbsp;&nbsp;Card Number:<input type="number" name="card number" id="card number"></p>
+        <p>&nbsp;&nbsp;Expiration Date:<input type="date" name="exp_date" id="exp_date"></p>
+        <p>&nbsp;&nbsp;CVV:<input type="password" name="cvv" id="cvv"></p>
+        <br>
+        <p><input type="submit" value="PAY NOW"></p>
+    </fieldset>
+
+</form>
+</body>
+</html>
